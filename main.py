@@ -79,7 +79,7 @@ def main1():
     rows, cols = 50, 50
     pygame.init()
     screen = pygame.display.set_mode((cols * CELL_SIZE, rows * CELL_SIZE))
-    pygame.display.set_caption("Grid")
+    pygame.display.set_caption("Random Grid")
     clock = pygame.time.Clock()
 
     grid = create_initial_grid(rows, cols)
@@ -91,6 +91,9 @@ def main1():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_r: 
+                    grid = create_initial_grid(rows, cols)  
 
         draw_grid(screen, grid, rows, cols)
         pygame.display.flip()
@@ -176,6 +179,7 @@ def menu():
                 return
             if event.type == pygame.MOUSEBUTTONDOWN:
                 if button1_rect.collidepoint(mouse_pos):
+                    print("Press 'R' to restart the grid")
                     main1()
                 if button2_rect.collidepoint(mouse_pos):
                     print("Left CLick to Draw/Remove a Pixel")
