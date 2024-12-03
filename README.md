@@ -18,7 +18,7 @@ or
 $ python3 main.py
 ```
 
-## 2. Instructions
+## Instructions
 
 </br>
 
