@@ -4,7 +4,7 @@
 
 
 ```console 
-$ git clone https://github.com/JCharls1/CSEG_Pathfinding_Comparison.git
+$ git clone https://github.com/JCharls1/Conway-s_Game_Of_Life.git
 ```
 
 **2. Open the folder in vs code**
