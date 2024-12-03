@@ -23,8 +23,10 @@ $ python3 main.py
 </br>
 
 ** Random Grid **
+
 </br> Press 'R' to Reset the grid
 
 ** Editable Grid **
+
 </br> Left CLick to Draw/Remove a Pixel
 </br> Space to Run the Simulation
